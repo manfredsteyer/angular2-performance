@@ -1,0 +1,22 @@
+<form [ngFormModel]="formMetaData.controlGroup">
+
+
+    <h2>Form Generator with dynamic Components</h2>
+
+    <div *ngFor="let entry of formMetaData.elements" class="form-group">
+        
+        <div *ngIf="!entry.controlName && !entry.control">
+            <label>{{entry.label}}</label>
+            <input [ngControl]="entry.fieldName" class="form-control">
+        </div>
+        
+        <div *ngIf="entry.control">
+            <label>{{entry.label}}</label>
+            <control-wrapper [metadata]="entry" [ngControl]="entry.fieldName"></control-wrapper>
+        </div>
+        
+    </div>
+    
+    <ng-content></ng-content>
+    
+</form>

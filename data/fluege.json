@@ -1,0 +1,22 @@
+[
+  {
+    "id": 12,
+    "datum": "2016-04-12T12:00",
+    "abflugort": "Graz",
+    "zielort": "Hamburg"
+  },
+  {
+    "id": 13,
+    "datum": "2016-04-14T12:00",
+    "abflugort": "Graz",
+    "zielort": "Hamburg"
+  },
+  {
+    "id": 14,
+    "datum": "2016-04-13T12:00",
+    "abflugort": "Graz",
+    "zielort": "Hamburg"
+  }
+
+
+]
